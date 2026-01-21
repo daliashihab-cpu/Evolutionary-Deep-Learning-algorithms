@@ -11,8 +11,8 @@ This repository contains the complete formal algorithms for a research paper on 
 | 3 | [algorithm3.md](algorithms/algorithm3.md) | Chromosome Encoding |
 | 4 | [algorithm4.md](algorithms/algorithm4.md) | Fitness Evaluation |
 | 5 | [algorithm5.md](algorithms/algorithm5.md) | Tournament Selection |
-| 6 | [algorithm6.md](algorithms/algorithm6.md) | Crossover Operation |
-| 7 | [algorithm7.md].(https://raw.githubusercontent.com/daliashihab-cpu/Evolutionary-Deep-Learning-algorithms/refs/heads/main/Algorithm%207%3A%20Mutation%20Operation). | Mutation Operation |
+| 6 | [algorithm6.md]([algorithms/algorithm6.md] | Crossover Operation |
+| 7 | [algorithm7.md].(https://raw.githubusercontent.com/daliashihab-cpu/Evolutionary-Deep-Learning-algorithms/refs/heads/main/Algorithm%207%3A%20Mutation%20Operation))| Mutation Operation |
 | 8 | [algorithm8.md](https://raw.githubusercontent.com/daliashihab-cpu/Evolutionary-Deep-Learning-algorithms/refs/heads/main/Algorithm%208%3A%20Population%20Evolution) | Population Evolution |
 
 ## 📁 Repository Structure
