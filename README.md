@@ -6,7 +6,7 @@ This repository contains the complete formal algorithms for a research paper on 
 ## 📋 Included Algorithms
 | Algorithm | File | Description |
 |-----------|------|-------------|
-| 1 | [algorithm1.md](https://github.com/daliashihab-cpu/Evolutionary-Deep-Learning-algorithms/blob/main/algorithm1.md) | Data Preprocessing |
+| 1 | [Algorithm 1: Data Loading and Preprocessing.md](https://github.com/daliashihab-cpu/Evolutionary-Deep-Learning-algorithms/blob/main/algorithm1.md) | Data Preprocessing |
 | 2 | [algorithm2.md](https://github.com/daliashihab-cpu/Evolutionary-Deep-Learning-algorithms/blob/main/algorithm2.md) | GA Framework |
 | 3 | [algorithm3.md](https://github.com/daliashihab-cpu/Evolutionary-Deep-Learning-algorithms/blob/main/algorithm3.md) | Chromosome Encoding |
 | 4 | [algorithm4.md](https://github.com/daliashihab-cpu/Evolutionary-Deep-Learning-algorithms/blob/main/algorithm4.md) | Fitness Evaluation |
