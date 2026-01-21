@@ -1,0 +1,20 @@
+Algorithm 8: Population Evolution
+Input: Current population P, Elitism rate elitism_rate, Mutation rate mutation_rate, Crossover rate crossover_rate
+Output: New population P_new
+ALGORITHM: Evolve_Population(P, elitism_rate, mutation_rate, crossover_rate)
+BEGIN
+    // Phase 1: Elitism Selection
+    1. Sort P by fitness in descending order
+    2. elite_count ← max(1, ceil(elitism_rate × len(P)))
+    3. P_new ← P[0:elite_count]  // Preserve best individuals
+    // Phase 2: Parent Selection
+    4. parents ← Tournament_Selection(P, 2)
+    // Phase 3: Offspring Generation
+    5. While len(P_new) < len(P) do
+        5.1 Select parent1, parent2 from parents
+        5.2 child ← Crossover(parent1, parent2, crossover_rate)
+        5.3 child ← Mutate(child, mutation_rate)
+        5.4 Append child to P_new
+    // Phase 4: Return New Population
+    6. Return P_new
+END
