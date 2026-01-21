@@ -1,0 +1,40 @@
+Algorithm 3: Chromosome Encoding and Individual Initialization
+Input: Predefined hyperparameter search spaces
+Output: Individual I representing neural network architecture
+ALGORITHM: Initialize_Individual()
+BEGIN
+    // Phase 1: Hyperparameter Initialization
+    1. Initialize parameters dictionary:
+        1.1 learning_rate ← random_choice([0.0001, 0.0005, 0.001, 0.005])
+        1.2 pool_type ← random_choice(['max', 'average'])
+        1.3 conv_dropout_rate ← random_choice([0.2, 0.3, 0.4])
+        1.4 lstm_dropout_rate ← random_choice([0.1, 0.2, 0.3])
+        1.5 conv_kernel ← random_choice([1, 3, 5])
+        1.6 conv_stride ← 1
+        1.7 conv_padding ← 'same'
+        1.8 cnn_activation ← random_choice(['Relu', 'sigmoid', 'tanh', 'leaky_Relu', 'pRelu'])
+        1.9 lstm_activation ← random_choice(['sigmoid', 'tanh'])
+    // Phase 2: Architecture Generation
+    2. num_conv_blocks ← random_int(1, 4)
+    3. num_lstm_blocks ← random_int(1, 2)
+    4. Initialize empty architecture list
+    // Phase 3: Convolutional Blocks Construction
+    5. For i ← 1 to num_conv_blocks do
+        5.1 Append conv_block: {'type': 'conv_block', 'filters': random_choice([32, 64, 128, 256, 512]),
+             'kernel_size': conv_kernel, 'stride': conv_stride, 'padding': conv_padding,
+             'pool_type': pool_type, 'dropout_rate': conv_dropout_rate, 'activation': cnn_activation}
+    // Phase 4: LSTM Blocks Construction
+    6. For i ← 1 to num_lstm_blocks do
+        6.1 Append lstm_block: {'type': 'lstm_block', 'units': random_choice([16, 32, 64]),
+            'dropout_rate': lstm_dropout_rate, 'return_sequences': true, 'activation': lstm_activation}
+    // Phase 5: Individual Creation
+    7. Create individual I with:
+        7.1 I.genes ← {'architecture': architecture}
+        7.2 I.parameters ← parameters_dictionary
+        7.3 I.fitness ← 0.0
+        7.4 I.model ← null
+    8. Return individual I
+END
+
+
+
