@@ -1,0 +1,22 @@
+Algorithm 6: Single-Point Crossover
+Input: Parent1 P1, Parent2 P2, Crossover rate crossover_rate
+Output: Child individual
+ALGORITHM: Crossover(P1, P2, crossover_rate)
+BEGIN
+    // Phase 1: Crossover Probability Check
+    1. If random() > crossover_rate then
+        1.1 Return random_choice([P1, P2])
+    // Phase 2: Architecture Preparation
+    2. arch1 ← P1.genes['architecture']
+    3. arch2 ← P2.genes['architecture']
+    4. min_len ← min(len(arch1), len(arch2))
+    // Phase 3: Crossover Feasibility Check
+    5. If min_len ≤ 1 then
+        5.1 Return random_choice([P1, P2])
+    // Phase 4: Crossover Execution
+    6. crossover_point ← random_int(1, min_len - 1)
+    7. child_arch ← arch1[0:crossover_point] + arch2[crossover_point:]
+    // Phase 5: Child Creation
+    8. Return new Individual with {'architecture': child_arch}
+END
+
