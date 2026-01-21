@@ -8,7 +8,7 @@ This repository contains the complete formal algorithms for a research paper on 
 |-----------|------|-------------|
 | 1 | [algorithm1.md](algorithms/algorithm1.md) | Data Preprocessing |
 | 2 | [algorithm2.md](algorithms/algorithm2.md) | GA Framework |
-| 3 | [algorithm3.md](algorithms/algorithm3.md) | Chromosome Encoding |
+| 3 | [algorithm3.md](https://raw.githubusercontent.com/daliashihab-cpu/Evolutionary-Deep-Learning-algorithms/refs/heads/main/Algorithm%203%3A%20Chromosome%20Encoding%20and%20Individual%20Initialization) | Chromosome Encoding |
 | 4 | [algorithm4.md](https://raw.githubusercontent.com/daliashihab-cpu/Evolutionary-Deep-Learning-algorithms/refs/heads/main/Algorithm%204%3A%20Fitness%20Evaluation)| Fitness Evaluation |
 | 5 | [algorithm5.md](https://raw.githubusercontent.com/daliashihab-cpu/Evolutionary-Deep-Learning-algorithms/refs/heads/main/Algorithm%205%3A%20Tournament%20Selection)| Tournament Selection |
 | 6 | [algorithm6.md](https://raw.githubusercontent.com/daliashihab-cpu/Evolutionary-Deep-Learning-algorithms/refs/heads/main/Algorithm%206%3A%20Single-Point%20Crossover)| Crossover Operation |
