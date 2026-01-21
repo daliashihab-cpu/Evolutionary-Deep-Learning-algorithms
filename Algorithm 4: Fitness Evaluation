@@ -1,0 +1,18 @@
+Algorithm 4: Fitness Evaluation	
+Input: Individual I, Training data (X_train, y_train), Validation data (X_val, y_val)
+Output: Fitness score, Performance metrics
+ALGORITHM: Evaluate_Fitness(I, X_train, y_train, X_val, y_val)
+BEGIN
+    // Phase 1: Model Construction
+   1. Build neural network model from I's chromosome encoding
+   2. Compile model with Adam optimizer using I.parameters['learning_rate']
+    // Phase 2: Model Training
+   3. Train model on X_train, y_train for fixed epochs
+    // Phase 3: Model Evaluation
+    4. Evaluate trained model on validation set X_val, y_val
+   5. Calculate validation accuracy as fitness score
+   6. Calculate precision, recall, F1-score metrics
+    // Phase 4: Result Return
+   7. Return fitness score and performance metrics
+END
+
