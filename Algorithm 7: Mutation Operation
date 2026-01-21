@@ -1,0 +1,21 @@
+Algorithm 7: Mutation Operation
+Input: Individual I, Mutation rate mutation_rate
+Output: Mutated individual
+ALGORITHM: Mutate(I, mutation_rate)
+BEGIN
+    // Phase 1: Mutation Probability Check
+    1. If random() > mutation_rate then
+        1.1 Return I // No mutation applied
+    // Phase 2: Mutation Type Selection
+    2. mutation_type ← random_choice(['add_layer', 'remove_layer', 'change_parameter', 'modify_layer'])
+    // Phase 3: Mutation Application
+    3. Switch (mutation_type)
+        Case 'add_layer': Insert random layer at randomposition
+        Case 'remove_layer': Remove random layer (if architecture length > 2)
+        Case 'change_parameter': Modify random hyperparameter value
+        Case 'modify_layer': Change filters/units in random layer
+    // Phase 4: Return Mutated Individual
+    4. Return mutated individual I
+END
+
+
