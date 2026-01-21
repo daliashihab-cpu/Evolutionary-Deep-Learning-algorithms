@@ -1,0 +1,17 @@
+Algorithm 5: Tournament Selection
+Input: Population P, Tournament size k = 2
+Output: Selected parents
+ALGORITHM: Tournament_Selection(P, k)
+BEGIN
+    // Phase 1: Initialization
+    1. Initialize empty parents list
+    // Phase 2: Parent Selection
+    2. For i ← 1 to len(P) do
+        2.1 Select k random individuals from P as contestants
+        2.2 Evaluate fitness of each contestant
+        2.3 Choose individual with maximum fitness
+        2.4 Add winner to parents list
+    // Phase 3: Return Results
+    3. Return parents list
+END
+
