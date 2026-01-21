@@ -1,0 +1,26 @@
+Algorithm 1: Data Loading and Preprocessing
+Input: Raw CSV files (Normal_data.csv, metasploitable-2.csv, OVS.csv)
+Output: Processed datasets (X_train, y_train, X_val, y_val, X_test, y_test), Input shape
+ALGORITHM: Preprocess_Dataset()
+BEGIN
+    // Phase 1: Data Loading and Cleaning
+    1. Define REMOVED_COLUMNS = ["Flow ID", "Src IP", "Dst IP", "Timestamp", "Src Port", "Dst Port"]
+    2. Load benign_data from "Normal_data.csv"
+    3. Load attack_data from "metasploitable-2.csv"
+    4. Load OVS from "OVS.csv"
+    5. For each dataset: remove null values and drop REMOVED_COLUMNS
+    // Phase 2: Dataset Integration
+    6. Concatenate all datasets into unified dataframe dataframes
+    7. Separate features: X ← dataframes.drop (columns=['Label'])
+    8. Separate labels: y ← dataframes['Label']
+    // Phase 3: Feature and Label Processing
+    9. Apply StandardScaler to normalize feature matrix X
+    10. Encode categorical labels y using LabelEncoder
+    // Phase 4: Data Partitioning
+    11. Split X, y into X_train (70%) and X_temp, y_temp (30%) using stratified sampling
+    12. Split X_temp, y_temp into X_test (67%) and X_val, y_val (33%)
+    13. Convert all labels to one-hot encoding using to_categorical
+    // Phase 6: Return Processed Data
+    14. Return X_train, y_train, X_val, y_val, X_test, y_test, input_shape
+END
+
