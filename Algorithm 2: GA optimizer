@@ -1,0 +1,34 @@
+Algorithm 2: GA optimizer 
+Input: Preprocessed data and GA parameters (population_size, generations).
+Output: The best-found neural network architecture and its performance.
+BEGIN
+    // Phase 1: Initialization
+    1. Initialize population using Initialize_Population()
+    2. Set generation = 0
+    3. Initialize statistics tracking variables
+    // Phase 2: Initial Population Evaluation
+    4. FOR each individual in population DO
+       4.1. Build model using individual's chromosome
+       4.2. fitness = Fitness_Evaluation(individual, X_train, y_train, X_val, y_val)
+       4.3. Record evaluation statistics
+    // Phase 3: Generation Loop
+    5. FOR generation = 1 to max_generations DO
+    // Phase 4: Evolution Step
+       5.1. new_population = Population_Evolution (population)
+    // Phase 5: New Individual Evaluation
+       5.2. FOR each new individual in new_population DO
+            5.2.1. IF individual not yet evaluated THEN
+             Build model and evaluate fitness
+         5.2.2. Record evaluation statistics
+    // Phase 6: Statistics Update
+       5.3. current_best = individual with maximum fitness
+       5.4. Record generation statistics
+       5.5. Update population = new_population
+    // Phase 7: Final Evaluation
+    6. best_individual = individual with highest fitness across all generations
+    7. Evaluate best_individual on test set
+    8. Generate comprehensive results report
+    9. Return results dictionary with best individual and statistics
+END
+
+
